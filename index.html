@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nikaah Announcement</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url('background.jpg') center center/cover no-repeat;
+    font-family:Garamond, serif;
+}
+
+.overlay{
+    width:100%;
+    padding:40px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.content{
+    max-width:800px;
+    text-align:center;
+}
+
+.fade{
+    opacity:0;
+    animation:fadeIn 0.9s ease forwards;
+}
+
+.bismillah{
+    width:min(320px,80%);
+    margin-bottom:20px;
+}
+
+.meaning{
+    color:#808080;
+    font-size:1rem;
+    margin-bottom:28px;
+    font-style:italic;
+}
+
+.request{
+    color:#000;
+    font-size:1.15rem;
+    font-weight:700;
+    margin-bottom:28px;
+}
+
+.name{
+    font-family:'Great Vibes', cursive;
+    color:#C4AB46;
+    font-size:4rem;
+    line-height:1.1;
+}
+
+.family{
+    color:#808080;
+    font-size:1rem;
+    margin-top:6px;
+    margin-bottom:20px;
+}
+
+.ampersand{
+    font-size:2rem;
+    color:#C4AB46;
+    margin:18px 0;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.delay-1{animation-delay:0.2s;}
+.delay-2{animation-delay:0.7s;}
+.delay-3{animation-delay:1.2s;}
+.delay-4{animation-delay:1.7s;}
+.delay-5{animation-delay:2.2s;}
+.delay-6{animation-delay:2.7s;}
+.delay-7{animation-delay:3.2s;}
+.delay-8{animation-delay:3.7s;}
+
+@media (max-width:600px){
+
+    .name{
+        font-size:3rem;
+    }
+
+    .request{
+        font-size:1rem;
+    }
+
+    .family{
+        font-size:0.95rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="overlay">
+    <div class="content">
+
+        <img src="bismillah.png" alt="Bismillah"
+             class="bismillah fade delay-1">
+
+        <p class="meaning fade delay-2">
+            IN THE NAME OF ALLAH, THE MOST GRACIOUS, THE MOST MERCIFUL
+        </p>
+
+        <p class="request fade delay-3">
+            THE NANA & ASMAL FAMILES REQUEST YOUR PRESENCE AT THE NIKAAH OF
+        </p>
+
+        <div class="name fade delay-4">
+            Luqmaan
+        </div>
+
+        <div class="family fade delay-5">
+            SON OF YUNUS & FARHANA NANA<br>
+            GRANDSON OF LATE ABDULLAH & FATIMA NANA &  LATE EBRAHIM & ZUBEIDA VORAJEE
+        </div>
+
+        <div class="ampersand fade delay-6">
+            &
+        </div>
+
+        <div class="name fade delay-7">
+            Zahrah
+        </div>
+
+        <div class="family fade delay-8">
+            DAUGHTER OF SULEMAN & SABEELA ASMAL<br>
+            GRANDDAUGHTER OF LATE FARID ASMAL & RASHEEDA ASMAL & HASSAN MIA & AFSARI SIRKHOT
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
